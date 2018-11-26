@@ -1,0 +1,47 @@
+.App{
+  width: 100%;
+  /*height:100vh;*/
+  /*background-color: blue;*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow: auto;
+  background-color: #e3edec;
+
+}
+
+.home-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.check{
+	width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .App{
+  	width: 100%;
+  }
+  .check{
+  	width: 90% !important;
+  }
+}
+
+.computer-container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.progress-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.progress{
+	width: 20%;
+}

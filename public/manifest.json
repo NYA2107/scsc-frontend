@@ -1,0 +1,18 @@
+{
+  "short_name": "SCSC",
+  "name": "System Computer Service Center",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "64x64 144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "related_applications": [{
+    "platform": "web"
+  }],
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
