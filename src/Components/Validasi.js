@@ -116,6 +116,20 @@ class Validasi extends Component{
     })
     return temp
   }
+  catatan(){
+    if(this.props.catatanTeknisi){
+      return (<Card fluid>
+              <Card.Content textAlign='left'>
+                <Card.Header>Catatan Teknisi</Card.Header>
+                <Label style={{margin:'10px'}} color='yellow' size='large'>
+                  {this.props.catatanTeknisi} 
+                </Label>
+              </Card.Content>
+            </Card>)
+    }else{
+      return null
+    }
+  }
 	render(){
     if(this.state.loading){
       return (
@@ -227,14 +241,19 @@ class Validasi extends Component{
                 </List>
               </Card.Content>
             </Card>
-            <Card fluid>
-              <Card.Content textAlign='left'>
-                <Card.Header>Catatan Teknisi</Card.Header>
-                <Label style={{margin:'10px'}} color='yellow' size='large'>
-                  {this.props.catatanTeknisi} 
-                </Label>
-              </Card.Content>
-            </Card>
+            {(this.props.catatanTeknisi && this.props.catatanTeknisi != '')
+                ?
+                <Card fluid>
+                  <Card.Content textAlign='left'>
+                    <Card.Header>Catatan Teknisi</Card.Header>
+                    <Label style={{margin:'10px'}} color='yellow' size='large'>
+                      {this.props.catatanTeknisi} 
+                    </Label>
+                  </Card.Content>
+                </Card>
+                :
+                null
+              }
             <Segment textAlign='center'>
               <Label style={{width:'100%'}} color='blue' basic>
                 Perkiraan total biaya : Rp.{this.getTotalBiaya()} 
