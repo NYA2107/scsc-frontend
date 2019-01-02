@@ -8,7 +8,7 @@ const ipAdd = {
 }
 
 const config = {
-    ip : 'localhost'
+    ip : '192.168.100.103'
 }
 
 export default config
